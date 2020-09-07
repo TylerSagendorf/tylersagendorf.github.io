@@ -1,0 +1,60 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+h2 {
+    font-weight: 300;
+    color: rgb(230, 230, 230);
+}
+
+strong, b {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+em, i {
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 2em 0;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery img {
+    max-width: 30vw;
+    height: auto;
+    margin: 0.25vw;
+    border-radius: 3px;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery img {
+        max-width: 46vw;
+        margin: 1vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery img {
+        max-width: 90vw;
+        margin: 1vw;
+    }
+}
